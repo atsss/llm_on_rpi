@@ -1,6 +1,6 @@
 from transformers import AutoModelForSequenceClassification, AutoTokenizer
 from transformers import TFAutoModelForSequenceClassification
-import tensorflow as tf
+import tflite_runtime as tf
 
 model = AutoModelForSequenceClassification.from_pretrained("distilbert-base-uncased-finetuned-sst-2-english")
 tokenizer = AutoTokenizer.from_pretrained("distilbert-base-uncased-finetuned-sst-2-english")
